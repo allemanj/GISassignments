@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Alleman Assignment 3</title>
+<head>
+
+<style>
+    H3 {color:red;
+        padding:0
+        margin:0;
+    }
+    H5 {color:red;
+        padding:0
+        margin:0
+    }
+    Body {background-color: floralwhite}    
+</style>
+
+<body>
+    <h3>Assignment 3</h3>
+    <h5>Joshua Alleman</h5>
+    
+    <br>
+    <a href="#" onclick="changeMap('basemapTopo')">Basemap</a> &nbsp;&nbsp;&nbsp;
+    <a href="#" onclick="changeMap('iowaBorder')">Iowa Border</a> &nbsp;&nbsp;&nbsp;
+    <a href="#" onclick="changeMap('scenicByways_border')">Scenic Byways</a> &nbsp;&nbsp;&nbsp;
+    <a href="#" onclick="changeMap('Interstate')">Interstate</a> &nbsp;&nbsp;&nbsp;
+    <a href="#" onclick="changeMap('appleOrchards')">Apple Orchards</a> &nbsp;&nbsp;&nbsp;
+    
+    <img id="myMap" src="images/basemapTopo.png" 
+alt="basemapTopo" width="600" height="400">
+    
+    </body>
+<script>
+
+function changeMap(x) {
+    document.getElementById("myMap").src = "images/"+ x + ".png";
+}
+    
+//changeMap("appleOrchards");
+
+</script>
+
+
+</html>
